@@ -1,0 +1,2088 @@
+maddison$country
+maddison$country[maddison$year == as.date("2000-01-01")]
+maddison$country[maddison$year == as.Date("2000-01-01")]
+maddison$country[maddison$year == as.Date("2000-01-01") &  !is.na(maddison$country)]
+countries <- c("United States", "France", "Italy", "Mexico", "Egypt", "India", "Turkey", "United Kingdom", "Norway")ggplot (maddison[maddison$country %in% countries, ], aes(x=year,y=gdp_pc))  + scale_y_continuous(name="GDP per Capita", trans=log10_trans(), breaks = trans_breaks("log10", function(x) 10^x),labels = trans_format("log10", math_format(10^.x))) + xlim(yearmin,yearmax) +geom_line(aes(colour=country),size=1) + annotation_logticks(sides="l",scaled=FALSE) +theme(panel.grid.minor.y = element_blank()) +xlab("Year") + ggtitle("Maddison Data of Country GDP per Capita Over Time")
+ls()
+rm(list=ls())
+ls()
+q()
+getwd()
+ls()
+system("ls")
+bk <- read.xls("rollingsales_queens.xls",pattern="BOROUGH")
+install.packages("gdata")
+library(plyr)#
+library(gdata)
+bk <- read.xls("rollingsales_queens.xls",pattern="BOROUGH")
+str(bk)
+q()
+installed.packages()
+test <installed.packages()
+fred < installed.packages()
+fred <- installed.packages()
+fred[1]
+fred[,1]
+remove.packages("ZillowR")
+remove.packages("raincpc")
+fred <- installed.packages()
+fred[,1]
+remove.packages("raster")
+rm(fred)
+ls()
+rm(list=ls())
+ls()
+q()
+library(swirl)
+swirl()
+data(cars)
+?cars
+head(cars)
+plot(cars)
+?plot
+plot(x=cars$speed, y=cars$dist)
+plot(y=cars$speed, x=cars$dist)
+plot(x=cars$speed, y=cars$dist, xlab = 'Speed')
+plot(x=cars$speed, y=cars$dist, xlab = 'Speed', ylab='Stopping Distance')
+plot(x=cars$speed, y=cars$dist,  ylab='Stopping Distance')
+plot(x=cars$speed, y=cars$dist, xlab = 'Speed', ylab='Stopping Distance')
+plot(x=cars$speed, y=cars$dist,  main='My Plot')
+plot(cars,  main='My Plot')
+plot(cars,  sub='My Plot Subtitle')
+plot(cars,  col=2)
+plot(cars,  xlim=c(10,15))
+plot(cars,  pch=2)
+load(mtcars)
+data(mtcars)
+?boxplot
+boxplot(mpg ~ cyl, data=mtcars)
+hist(mtcars$mpg)
+q
+q()
+library(XML)
+q()
+ls()
+rm(list=ls())
+ls()
+test <- c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16)
+test2 <- test[$[0-6]]
+test2 <- test[\$[0-6]]
+test2 <- test[\\$[0-6]]
+test2 <- test[test[\\$[0-6]]]
+test2 <- [test[grep$[0-6]]]
+test2 <- test[grep$[0-6]]
+test2 <- test[grep$(0-6)]
+test2 <- grep($(0-6),test)
+test2 <- grep((0-6),test)
+test2
+test2 <- grep((0:6),test)
+test2 <- test[which(test %in% 1:6)]
+test2
+test2 <- test[which(test %in% $[0-6])]
+test2 <- test[which(test %in% ^[0-6])]
+test2 <- test[which(test %in% [0-6])]
+pmatch(6,test)
+pmatch(\\$6,test)
+pmatch(\$6,test)
+pmatch($6,test)
+pmatch(6,test, duplicates.ok=TRUE)
+pmatch(1,test, duplicates.ok=TRUE)
+grep("$5",test)
+grep("\\$5",test)
+grep([0-6],test)
+grep((0-6),test)
+q()
+base10to7<-function(x){#
+    i=0#
+    sum=0#
+    while(x%/%7!=0){#
+        sum<-sum+((x%%7)*(10^i))#
+        i=i+1#
+        x<-x%/%7#
+    }#
+    sum<-sum+((x%%7)*(10^i))#
+    return(sum)#
+}#
+base10to7(100)
+base10to7(14)
+base10to7(35)
+base10to7(6)
+base10to7(39)
+countbase7 <- function(x) {#
+    for (i in 1:x) {#
+        count[i] <- bases10to7(i)#
+#
+        base10to7<-function(x){#
+            i=0#
+            sum=0#
+            while(x%/%7!=0){#
+                sum<-sum+((x%%7)*(10^i))#
+                i=i+1#
+                x<-x%/%7#
+            }#
+            sum<-sum+((x%%7)*(10^i))#
+            return(sum)#
+        }#
+#
+count#
+}
+countbase7(5)
+countbase7 <- function(x) {#
+    for (i in 1:x) {#
+        count[i] <- bases10to7(i)#
+#
+        base10to7<-function(x){#
+            i=0#
+            sum=0#
+            while(x%/%7!=0){#
+                sum<-sum+((x%%7)*(10^i))#
+                i=i+1#
+                x<-x%/%7#
+            }#
+            sum<-sum+((x%%7)*(10^i))#
+            return(sum)#
+        }#
+    }#
+#
+count#
+}
+countbase7(5)
+countbase7 <- function(x) {#
+    for (i in 1:x) {#
+        count[i] <- base10to7(i)#
+#
+        base10to7<-function(x){#
+            i=0#
+            sum=0#
+            while(x%/%7!=0){#
+                sum<-sum+((x%%7)*(10^i))#
+                i=i+1#
+                x<-x%/%7#
+            }#
+            sum<-sum+((x%%7)*(10^i))#
+            return(sum)#
+        }#
+    }#
+#
+count#
+}
+countbase7(5)
+count <- integer(x)
+countbase7 <- function(x) {#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10to7(i)#
+#
+        base10to7<-function(x){#
+            i=0#
+            sum=0#
+            while(x%/%7!=0){#
+                sum<-sum+((x%%7)*(10^i))#
+                i=i+1#
+                x<-x%/%7#
+            }#
+            sum<-sum+((x%%7)*(10^i))#
+            return(sum)#
+        }#
+    }#
+#
+count#
+}
+countbase7(5)
+countbase7(35)
+countbase7 <- function(x) {#
+    count <- integer(x)#
+    for (i in 0:x-1) {#
+        count[i] <- base10to7(i)#
+#
+        base10to7<-function(x){#
+            i=0#
+            sum=0#
+            while(x%/%7!=0){#
+                sum<-sum+((x%%7)*(10^i))#
+                i=i+1#
+                x<-x%/%7#
+            }#
+            sum<-sum+((x%%7)*(10^i))#
+            return(sum)#
+        }#
+    }#
+#
+count#
+}
+countbase7(35)
+countbase7 <- function(x) {#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10to7(i-1)#
+#
+        base10to7<-function(x){#
+            i=0#
+            sum=0#
+            while(x%/%7!=0){#
+                sum<-sum+((x%%7)*(10^i))#
+                i=i+1#
+                x<-x%/%7#
+            }#
+            sum<-sum+((x%%7)*(10^i))#
+            return(sum)#
+        }#
+    }#
+#
+count#
+}
+countbase7(35)
+base7to10<-function(x){#
+    i=0#
+    sum=0#
+    while(x%/%10!=0){#
+        sum<-sum+((x%%10)*(7^i))#
+        i=i+1#
+        x<-x%/%10#
+    }#
+    sum<-sum+((x%%10)*(7^i))#
+    return(sum)#
+}
+base7to10(202)
+base7to10(50)
+base7to10(0)
+countbasek <- function(x, k) {#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10tok(i-1)#
+        base10tok<-function(x, k){#
+            i=0#
+            sum=0#
+            while(x%/%k!=0){#
+                sum<-sum+((x%%k)*(10^i))#
+                i=i+1#
+                x<-x%/%k#
+            }#
+            sum<-sum+((x%%k)*(10^i))#
+            return(sum)#
+        }#
+    }#
+    count#
+}
+countbasek(35,5)
+countbasek <- function(x, k) {#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10tok(i-1,k)#
+        base10tok<-function(x, k){#
+            i=0#
+            sum=0#
+            while(x%/%k!=0){#
+                sum<-sum+((x%%k)*(10^i))#
+                i=i+1#
+                x<-x%/%k#
+            }#
+            sum<-sum+((x%%k)*(10^i))#
+            return(sum)#
+        }#
+    }#
+    count#
+}
+countbasek(35,5)
+countbasek <- function(x, k) {#
+    base10tok<-function(x, k){#
+        i=0#
+        sum=0#
+        while(x%/%k!=0){#
+            sum<-sum+((x%%k)*(10^i))#
+            i=i+1#
+            x<-x%/%k#
+        }#
+        sum<-sum+((x%%k)*(10^i))#
+        return(sum)#
+    }#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10tok(i-1,k)#
+    }#
+    count#
+}
+countbasek(35,5)
+countbasek(35,9)
+base10tok<-function(x, k){#
+    i=0#
+    sum=0#
+    while(x%/%k!=0){#
+        sum<-sum+((x%%k)*(10^i))#
+        i=i+1#
+        x<-x%/%k#
+    }#
+    sum<-sum+((x%%k)*(10^i))#
+    return(sum)#
+}
+base10tok(100,7)
+base10tok(100,5)
+base10tok(100,10)
+basekto10<-function(x, k){#
+    i=0#
+    sum=0#
+    while(x%/%10!=0){#
+        sum<-sum+((x%%10)*(k^i))#
+        i=i+1#
+        x<-x%/%10#
+    }#
+    sum<-sum+((x%%10)*(k^i))#
+    return(sum)#
+}
+basekto10(202,7)
+basekto10(400,5)
+ls()
+rm(list=ls())
+la()
+ls()
+countbase7 <- function(x) {#
+    base10to7<-function(x){#
+        i=0#
+        sum=0#
+        while(x%/%7!=0){#
+            sum<-sum+((x%%7)*(10^i))#
+            i=i+1#
+            x<-x%/%7#
+        }#
+        sum<-sum+((x%%7)*(10^i))#
+        return(sum)#
+    }#
+#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10to7(i-1)#
+#
+    }#
+#
+count#
+}
+countbase7(35)
+countbase7(36)
+q()
+ls
+ls()
+##
+# Part a: Count in base 7 starting at 0 not 1 (not the way I usually count...)#
+##
+#
+countbase7 <- function(x) {#
+##
+# This function takes an integer (x) in base 7 and returns x numbers in#
+#     base 7 starting at 0.  So, the final number is the base 7 equivalent of#
+#     x - 1#
+##
+# The counting is performed by calling a function (base10to7) that converts#
+#     base 10 to base 7 as the program loops to the desired number#
+##
+    base10to7<-function(x){#
+        i=0#
+        sum=0#
+        while(x%/%7!=0){#
+            sum<-sum+((x%%7)*(10^i))#
+            i=i+1#
+            x<-x%/%7#
+        }#
+        sum<-sum+((x%%7)*(10^i))#
+        return(sum)#
+    }#
+#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10to7(i-1)#
+#
+    }#
+#
+count#
+}#
+#
+##
+# Part b (provided): Function for converted base 10 to base 7#
+##
+#
+base10to7<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+    i=0#
+    sum=0#
+    while(x%/%7!=0){#
+        sum<-sum+((x%%7)*(10^i))#
+        i=i+1#
+        x<-x%/%7#
+    }#
+    sum<-sum+((x%%7)*(10^i))#
+    return(sum)#
+}#
+##
+# Part c: Function for converting base 7 to base 10#
+##
+#
+base7to10<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 7 to base 10#
+#     and returns the base 10 number#
+##
+    i=0#
+    sum=0#
+    while(x%/%10!=0){#
+        sum<-sum+((x%%10)*(7^i))#
+        i=i+1#
+        x<-x%/%10#
+    }#
+    sum<-sum+((x%%10)*(7^i))#
+    return(sum)#
+}#
+##
+# Part d: Generalize part a through c to any base (k, instead of just 7)#
+##
+# Part a with any base (k):#
+countbasek <- function(x, k) {#
+##
+# This function takes an integer (x) and a base (k) and returns x numbers in#
+#     base k starting at 0.  So, the final number is the base k equivalent of#
+#     x - 1#
+##
+# The counting is performed by calling a function (base10tok) that converts#
+#     base 10 to base k as the program loops to the desired number#
+##
+    base10tok<-function(x, k){#
+        i=0#
+        sum=0#
+        while(x%/%k!=0){#
+            sum<-sum+((x%%k)*(10^i))#
+            i=i+1#
+            x<-x%/%k#
+        }#
+        sum<-sum+((x%%k)*(10^i))#
+        return(sum)#
+    }#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10tok(i-1,k)#
+    }#
+    count#
+}#
+# Part b with any base (k, instead of 7):#
+base10tok<-function(x, k){#
+##
+# This function takes an integer (x) and a base (k) converts x from base 10#
+#     to base k and returns the base k number#
+##
+    i=0#
+    sum=0#
+    while(x%/%k!=0){#
+        sum<-sum+((x%%k)*(10^i))#
+        i=i+1#
+        x<-x%/%k#
+    }#
+    sum<-sum+((x%%k)*(10^i))#
+    return(sum)#
+}#
+# Part c: with any base (k, instead of 7):#
+basekto10<-function(x, k){#
+##
+# This function takes an integer (x) and a base (k) and converts x from base k#
+#     to base 10 and returns the base 10 number#
+##
+    i=0#
+    sum=0#
+    while(x%/%10!=0){#
+        sum<-sum+((x%%10)*(k^i))#
+        i=i+1#
+        x<-x%/%10#
+    }#
+    sum<-sum+((x%%10)*(k^i))#
+    return(sum)#
+}
+countbase7(50)#
+base10to7(35)#
+base7to10(50)#
+base7to10(base10to7(123456))
+countbasek(36,5)#
+base10tok(35,5)#
+basekto10(400,5)#
+basekto10(base10tok(43210,5),5)
+q()
+##################################################################################
+##
+# This assignment converts numbers between bases#
+##
+# We start with base 10 to base 7#
+##
+##
+##################################################################################
+#
+##
+# Part a: Count in base 7 starting at 0 not 1 (not the way I usually count...)#
+##
+#
+countbase7 <- function(x) {#
+##
+# This function takes an integer (x) in base 7 and returns x numbers in#
+#     base 7 starting at 0.  So, the final number is the base 7 equivalent of#
+#     x - 1#
+##
+# The counting is performed by calling a function (base10to7) that converts#
+#     base 10 to base 7 as the program loops to the desired number#
+##
+    base10to7<-function(x){#
+        i = 0#
+        converted = 0#
+        while(x%/%7 != 0){#
+            converted <- converted +((x%%7)*(10^i))#
+            i = i + 1#
+            x <- x%/%7#
+        }#
+        converted <- converted + ((x%%7)*(10^i))#
+        return(converted)#
+    }#
+#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10to7(i-1)#
+#
+    }#
+#
+count#
+}#
+#
+##
+# Part b (provided): Function for converted base 10 to base 7#
+##
+#
+base10to7<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%7 != 0){#
+        converted <-converted + ((x%%7)*(10^i))#
+        i = i + 1#
+        x<-x%/%7#
+    }#
+    converted <- converted + ((x%%7)*(10^i))#
+    return(converted)#
+}#
+##
+# Part c: Function for converting base 7 to base 10#
+##
+#
+base7to10<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 7 to base 10#
+#     and returns the base 10 number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%10 != 0){#
+        converted <- converted + ((x%%10)*(7^i))#
+        i = i + 1#
+        x <- x%/%10#
+    }#
+    converted <- converted + ((x%%10)*(7^i))#
+    return(converted)#
+}#
+##
+# Part d: Generalize part a through c to any base (k, instead of just 7)#
+##
+# Part a with any base (k):#
+countbasek <- function(x, k) {#
+##
+# This function takes an integer (x) and a base (k) and returns x numbers in#
+#     base k starting at 0.  So, the final number is the base k equivalent of#
+#     x - 1#
+##
+# The counting is performed by calling a function (base10tok) that converts#
+#     base 10 to base k as the program loops to the desired number#
+##
+    base10tok<-function(x, k){#
+        i = 0#
+        converted = 0#
+        while(x%/%k!= 0){#
+            converted <- converted +((x%%k)*(10^i))#
+            i = i + 1#
+            x <- x%/%k#
+        }#
+        converted <- converted + ((x%%k)*(10^i))#
+        return(converted)#
+    }#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10tok(i-1,k)#
+    }#
+    count#
+}#
+# Part b with any base (k, instead of 7):#
+base10tok<-function(x, k){#
+##
+# This function takes an integer (x) and a base (k) converts x from base 10#
+#     to base k and returns the base k number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%k != 0){#
+        converted <- converted + ((x%%k)*(10^i))#
+        i = i + 1#
+        x <- x%/%k#
+    }#
+    converted <- converted + ((x%%k)*(10^i))#
+    return(converted)#
+}#
+# Part c: with any base (k, instead of 7):#
+basekto10<-function(x, k){#
+##
+# This function takes an integer (x) and a base (k) and converts x from base k#
+#     to base 10 and returns the base 10 number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%10 != 0){#
+        converted <- converted + ((x%%10)*(k^i))#
+        i = i + 1#
+        x <- x%/%10#
+    }#
+    converted <-converted +((x%%10)*(k^i))#
+    return(converted)#
+}
+countbase7(50)    # should end at 100#
+base10to7(35)     # should be 50#
+base7to10(50)     # should be 35#
+base7to10(base10to7(123456))
+countbasek(36,5)  # should end at 120#
+base10tok(35,5)   # should be 120#
+basekto10(400,5)  # should be 100#
+basekto10(base10tok(43210,5),5)
+base10tok(35.55,5)
+base10tok(35.99,5)
+base10to7<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%7 != 0){#
+        converted <-converted + ((x%%7)*(10^i))#
+        i = i + 1#
+        x<-x%/%7#
+        converted#
+        x#
+    }#
+    converted <- converted + ((x%%7)*(10^i))#
+    return(converted)#
+}
+base10to7(35)
+base10to7<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%7 != 0){#
+        converted <-converted + ((x%%7)*(10^i))#
+        i = i + 1#
+        x<-x%/%7#
+        print(converted)#
+        print(x)#
+    }#
+    converted <- converted + ((x%%7)*(10^i))#
+    return(converted)#
+}
+base10to7(35)
+base10to7<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%7 != 0){#
+        converted <-converted + ((x%%7)*(10^i))#
+        i = i + 1#
+        x<-x%/%7#
+        message("converted =",converted)#
+        message("x = ",x)#
+    }#
+    converted <- converted + ((x%%7)*(10^i))#
+    return(converted)#
+}
+base10to7(35)
+base10to7(100)
+q()
+base10to7<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%7 != 0){#
+        converted <- converted + ((x%%7)*(10^i))#
+        message "x%%7 = ", x%%7)#
+        i = i + 1#
+        x <- x%/%7#
+        message("converted = ", converted)#
+        message("new x = ", x)#
+    }#
+    converted <- converted + ((x%%7)*(10^i))#
+    return(converted)#
+}
+base10to7<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%7 != 0){#
+        converted <- converted + ((x%%7)*(10^i))#
+        message("x%%7 = ", x%%7)#
+        i = i + 1#
+        x <- x%/%7#
+        message("converted = ", converted)#
+        message("new x = ", x)#
+    }#
+    converted <- converted + ((x%%7)*(10^i))#
+    return(converted)#
+}
+base10to7(7777)
+base7to10<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 7 to base 10#
+#     and returns the base 10 number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%10 != 0){#
+        converted <- converted + ((x%%10)*(7^i))#
+        message("x%%7 = ", x%%7)#
+        i = i + 1#
+        x <- x%/%10#
+        message("converted = ", converted)#
+        message("new x = ", x)#
+    }#
+    converted <- converted + ((x%%10)*(7^i))#
+    return(converted)#
+}
+base7to10(31450)
+base7to10<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 7 to base 10#
+#     and returns the base 10 number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%10 != 0){#
+        converted <- converted + ((x%%10)*(7^i))#
+        message("x%%10 = ", x%%10)#
+        i = i + 1#
+        x <- x%/%10#
+        message("converted = ", converted)#
+        message("new x = ", x)#
+    }#
+    converted <- converted + ((x%%10)*(7^i))#
+    return(converted)#
+}
+base7to10(31450)
+base7to10<-function(x){#
+##
+# This function takes an integer (x) and converts it from base 7 to base 10#
+#     and returns the base 10 number#
+##
+    i = 0#
+    converted = 0#
+    while(x%/%10 != 0){#
+        converted <- converted + ((x%%10)*(7^i))#
+        message("x%%10 = ", x%%10)#
+        i = i + 1#
+        x <- x%/%10#
+        message("converted = ", converted)#
+        message("new x = ", x)#
+    }#
+    message("before final converted = ", converted)#
+    converted <- converted + ((x%%10)*(7^i))#
+    message("after final converted = ", converted)#
+    return(converted)#
+}
+base7to10(31450)
+rm(list=ls())
+ls()
+##
+# Part a: Count in base 7 starting at 0 not 1 (not the way I usually count...)#
+##
+#
+countbase7 <- function(x) {#
+##
+# This function takes an integer (x) in base 7 and returns x numbers in#
+#     base 7 starting at 0.  So, the final number is the base 7 equivalent of#
+#     x - 1#
+##
+# The counting is performed by calling a function (base10to7) that converts#
+#     base 10 to base 7 as the program loops to the desired number#
+##
+    base10to7<-function(x){#
+##
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to 7 (x%%7) (basically finding the remainder when dividing by 7),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 7, and the steps repeated with the new number#
+#     until the number is less than 7.#
+##
+# When the number is less than than 7, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 7.#
+##
+##
+        i = 0#
+        converted = 0#
+        while(x%/%7 != 0){#
+            converted <- converted + ((x%%7)*(10^i))#
+            i = i + 1#
+            x <- x%/%7#
+        }#
+        converted <- converted + ((x%%7)*(10^i))#
+        return(converted)#
+    }#
+#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10to7(i-1)#
+#
+    }#
+#
+count#
+}#
+#
+##
+# Part b (provided): Function for converted base 10 to base 7#
+##
+#
+base10to7<-function(x){#
+##
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to 7 (x%%7) (basically finding the remainder when dividing by 7),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 7, and the steps repeated with the new number#
+#     until the number is less than 7.#
+##
+# When the number is less than than 7, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 7.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(x%/%7 != 0){#
+        converted <- converted + ((x%%7)*(10^i))        message("x%%7 = ", x%%7)#
+        i = i + 1#
+        x <- x%/%7#
+    }#
+    converted <- converted + ((x%%7)*(10^i))#
+    return(converted)#
+}#
+##
+# Part c: Function for converting base 7 to base 10#
+##
+#
+base7to10<-function(x){#
+##
+##
+# This function takes an integer (x) and converts it from base 7 to base 10#
+#     and returns the base 10 number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to 10 (x%%10) (basically finding the remainder when dividing by 10),#
+#     multiplying that remainder by 7 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 10, and the steps repeated with the new number#
+#     until the number is less than 10.#
+##
+# When the number is less than than 10, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 10.#
+##
+##
+#
+    i = 0#
+    converted = 0#
+    while(x%/%10 != 0){#
+        converted <- converted + ((x%%10)*(7^i))#
+        i = i + 1#
+        x <- x%/%10#
+    }#
+    converted <- converted + ((x%%10)*(7^i))#
+    return(converted)#
+}#
+##
+# Part d: Generalize part a through c to any base (k, instead of just 7)#
+##
+# Part a with any base (k):#
+countbasek <- function(x, k) {#
+##
+# This function takes an integer (x) and a base (k) and returns x numbers in#
+#     base k starting at 0.  So, the final number is the base k equivalent of#
+#     x - 1#
+##
+# The counting is performed by calling a function (base10tok) that converts#
+#     base 10 to base k as the program loops to the desired number#
+##
+    base10tok<-function(x, k){#
+##
+##
+# This function takes an integer (x) and a base (k) converts x from base 10#
+#     to base k and returns the base k number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to k (x%%k) (basically finding the remainder when dividing by k),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by k, and the steps repeated with the new number#
+#     until the number is less than k.#
+##
+# When the number is less than than k, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base k.#
+##
+##
+        i = 0#
+        converted = 0#
+        while(x%/%k!= 0){#
+            converted <- converted +((x%%k)*(10^i))#
+            i = i + 1#
+            x <- x%/%k#
+        }#
+        converted <- converted + ((x%%k)*(10^i))#
+        return(converted)#
+    }#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10tok(i-1,k)#
+    }#
+    count#
+}#
+# Part b with any base (k, instead of 7):#
+base10tok<-function(x, k){#
+##
+##
+# This function takes an integer (x) and a base (k) converts x from base 10#
+#     to base k and returns the base k number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to k (x%%k) (basically finding the remainder when dividing by k),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by k, and the steps repeated with the new number#
+#     until the number is less than k.#
+##
+# When the number is less than than k, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base k.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(x%/%k != 0){#
+        converted <- converted + ((x%%k)*(10^i))#
+        i = i + 1#
+        x <- x%/%k#
+    }#
+    converted <- converted + ((x%%k)*(10^i))#
+    return(converted)#
+}#
+# Part c: with any base (k, instead of 7):#
+basekto10<-function(x, k){#
+##
+##
+# This function takes an integer (x) and a base (k) and converts x from base k#
+#     to base 10 and returns the base 10 number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to 10 (x%%10) (basically finding the remainder when dividing by 10),#
+#     multiplying that remainder by k raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 10, and the steps repeated with the new number#
+#     until the number is less than 10.#
+##
+# When the number is less than than 10, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 10.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(x%/%10 != 0){#
+        converted <- converted + ((x%%10)*(k^i))#
+        i = i + 1#
+        x <- x%/%10#
+    }#
+    converted <- converted + ((x%%10)*(k^i))#
+    return(converted)#
+}#
+##
+# Testing all functions
+countbase7(50)    # should end at 100#
+base10to7(35)     # should be 50#
+base7to10(50)     # should be 35#
+base7to10(base10to7(123456))
+rm(list=ls())
+ls()
+##
+# Part a: Count in base 7 starting at 0 not 1 (not the way I usually count...)#
+##
+#
+countbase7 <- function(x) {#
+##
+# This function takes an integer (x) in base 7 and returns x numbers in#
+#     base 7 starting at 0.  So, the final number is the base 7 equivalent of#
+#     x - 1#
+##
+# The counting is performed by calling a function (base10to7) that converts#
+#     base 10 to base 7 as the program loops to the desired number#
+##
+    base10to7<-function(x){#
+##
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to 7 (x%%7) (basically finding the remainder when dividing by 7),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 7, and the steps repeated with the new number#
+#     until the number is less than 7.#
+##
+# When the number is less than than 7, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 7.#
+##
+##
+        i = 0#
+        converted = 0#
+        while(x%/%7 != 0){#
+            converted <- converted + ((x%%7)*(10^i))#
+            i = i + 1#
+            x <- x%/%7#
+        }#
+        converted <- converted + ((x%%7)*(10^i))#
+        return(converted)#
+    }#
+#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10to7(i-1)#
+#
+    }#
+#
+count#
+}#
+#
+##
+# Part b (provided): Function for converted base 10 to base 7#
+##
+#
+base10to7<-function(x){#
+##
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to 7 (x%%7) (basically finding the remainder when dividing by 7),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 7, and the steps repeated with the new number#
+#     until the number is less than 7.#
+##
+# When the number is less than than 7, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 7.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(x%/%7 != 0){#
+        converted <- converted + ((x%%7)*(10^i))#
+        i = i + 1#
+        x <- x%/%7#
+    }#
+    converted <- converted + ((x%%7)*(10^i))#
+    return(converted)#
+}#
+##
+# Part c: Function for converting base 7 to base 10#
+##
+#
+base7to10<-function(x){#
+##
+##
+# This function takes an integer (x) and converts it from base 7 to base 10#
+#     and returns the base 10 number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to 10 (x%%10) (basically finding the remainder when dividing by 10),#
+#     multiplying that remainder by 7 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 10, and the steps repeated with the new number#
+#     until the number is less than 10.#
+##
+# When the number is less than than 10, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 10.#
+##
+##
+#
+    i = 0#
+    converted = 0#
+    while(x%/%10 != 0){#
+        converted <- converted + ((x%%10)*(7^i))#
+        i = i + 1#
+        x <- x%/%10#
+    }#
+    converted <- converted + ((x%%10)*(7^i))#
+    return(converted)#
+}#
+##
+# Part d: Generalize part a through c to any base (k, instead of just 7)#
+##
+# Part a with any base (k):#
+countbasek <- function(x, k) {#
+##
+# This function takes an integer (x) and a base (k) and returns x numbers in#
+#     base k starting at 0.  So, the final number is the base k equivalent of#
+#     x - 1#
+##
+# The counting is performed by calling a function (base10tok) that converts#
+#     base 10 to base k as the program loops to the desired number#
+##
+    base10tok<-function(x, k){#
+##
+##
+# This function takes an integer (x) and a base (k) converts x from base 10#
+#     to base k and returns the base k number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to k (x%%k) (basically finding the remainder when dividing by k),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by k, and the steps repeated with the new number#
+#     until the number is less than k.#
+##
+# When the number is less than than k, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base k.#
+##
+##
+        i = 0#
+        converted = 0#
+        while(x%/%k!= 0){#
+            converted <- converted +((x%%k)*(10^i))#
+            i = i + 1#
+            x <- x%/%k#
+        }#
+        converted <- converted + ((x%%k)*(10^i))#
+        return(converted)#
+    }#
+    count <- integer(x)#
+    for (i in 1:x) {#
+        count[i] <- base10tok(i-1,k)#
+    }#
+    count#
+}#
+# Part b with any base (k, instead of 7):#
+base10tok<-function(x, k){#
+##
+##
+# This function takes an integer (x) and a base (k) converts x from base 10#
+#     to base k and returns the base k number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to k (x%%k) (basically finding the remainder when dividing by k),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by k, and the steps repeated with the new number#
+#     until the number is less than k.#
+##
+# When the number is less than than k, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base k.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(x%/%k != 0){#
+        converted <- converted + ((x%%k)*(10^i))#
+        i = i + 1#
+        x <- x%/%k#
+    }#
+    converted <- converted + ((x%%k)*(10^i))#
+    return(converted)#
+}#
+# Part c: with any base (k, instead of 7):#
+basekto10<-function(x, k){#
+##
+##
+# This function takes an integer (x) and a base (k) and converts x from base k#
+#     to base 10 and returns the base 10 number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to 10 (x%%10) (basically finding the remainder when dividing by 10),#
+#     multiplying that remainder by k raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 10, and the steps repeated with the new number#
+#     until the number is less than 10.#
+##
+# When the number is less than than 10, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 10.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(x%/%10 != 0){#
+        converted <- converted + ((x%%10)*(k^i))#
+        i = i + 1#
+        x <- x%/%10#
+    }#
+    converted <- converted + ((x%%10)*(k^i))#
+    return(converted)#
+}#
+##
+# Testing all functions
+countbase7(50)    # should end at 100#
+base10to7(35)     # should be 50#
+base7to10(50)     # should be 35#
+base7to10(base10to7(123456))
+countbasek(36,5)  # should end at 120#
+base10tok(35,5)   # should be 120#
+basekto10(400,5)  # should be 100#
+basekto10(base10tok(43210,5),5)
+q()
+p7 <- function(n) {#
+##
+# This function takes an integer (x) in base 7 and returns x numbers in#
+#     base 7 starting at 0.  So, the final number is the base 7 equivalent of#
+#     x - 1#
+##
+# The counting is performed by calling a function (base10to7) that converts#
+#     base 10 to base 7 as the program loops to the desired number#
+##
+    base10to7<-function(n){#
+##
+##
+# This function takes an integer (n) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+# The function works by taking the input number (n), finding the modulus with#
+#     respect to 7 (n%%7) (basically finding the remainder when dividing by 7),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 7, and the steps repeated with the new number#
+#     until the number is less than 7.#
+##
+# When the number is less than than 7, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 7.#
+##
+##
+        i = 0#
+        converted = 0#
+        while(n%/%7 != 0){#
+            converted <- converted + ((n%%7)*(10^i))#
+            i = i + 1#
+            n <- n%/%7#
+        }#
+        converted <- converted + ((n%%7)*(10^i))#
+        return(converted)#
+    }#
+#
+    count <- integer(n)#
+    for (i in 1:n) {#
+        count[i] <- base10to7(i-1)#
+#
+    }#
+#
+count#
+}
+p7(5)
+p7(15)
+##################################################################################
+##
+# This assignment converts numbers between bases   #
+##
+# We start with base 10 and base 7#
+# Then move to conversions between base 10 and base k#
+##
+##################################################################################
+#
+##
+# Part a: Count in base 7 starting at 0 not 1 (not the way I usually count...)#
+##
+#
+p7 <- function(n) {#
+##
+# This function takes an integer (x) in base 7 and returns x numbers in#
+#     base 7 starting at 0.  So, the final number is the base 7 equivalent of#
+#     x - 1#
+##
+# The counting is performed by calling a function (base10to7) that converts#
+#     base 10 to base 7 as the program loops to the desired number#
+##
+    base10to7<-function(n){#
+##
+##
+# This function takes an integer (n) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+# The function works by taking the input number (n), finding the modulus with#
+#     respect to 7 (n%%7) (basically finding the remainder when dividing by 7),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 7, and the steps repeated with the new number#
+#     until the number is less than 7.#
+##
+# When the number is less than than 7, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 7.#
+##
+##
+        i = 0#
+        converted = 0#
+        while(n%/%7 != 0){#
+            converted <- converted + ((n%%7)*(10^i))#
+            i = i + 1#
+            n <- n%/%7#
+        }#
+        converted <- converted + ((n%%7)*(10^i))#
+        return(converted)#
+    }#
+#
+    count <- integer(n)#
+    for (i in 1:n) {#
+        count[i] <- base10to7(i-1)#
+#
+    }#
+#
+count#
+}#
+#
+##
+# Part b (provided): Function for converted base 10 to base 7#
+##
+#
+base10to7<-function(x){#
+##
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to 7 (x%%7) (basically finding the remainder when dividing by 7),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 7, and the steps repeated with the new number#
+#     until the number is less than 7.#
+##
+# When the number is less than than 7, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 7.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(x%/%7 != 0){#
+        converted <- converted + ((x%%7)*(10^i))#
+        i = i + 1#
+        x <- x%/%7#
+    }#
+    converted <- converted + ((x%%7)*(10^i))#
+    return(converted)#
+}#
+##
+# Part c: Function for converting base 7 to base 10#
+##
+#
+base7to10<-function(y){#
+##
+##
+# This function takes an integer (x) and converts it from base 7 to base 10#
+#     and returns the base 10 number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to 10 (x%%10) (basically finding the remainder when dividing by 10),#
+#     multiplying that remainder by 7 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 10, and the steps repeated with the new number#
+#     until the number is less than 10.#
+##
+# When the number is less than than 10, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 10.#
+##
+##
+#
+    i = 0#
+    converted = 0#
+    while(y%/%10 != 0){#
+        converted <- converted + ((y%%10)*(7^i))#
+        i = i + 1#
+        y <- y%/%10#
+    }#
+    converted <- converted + ((y%%10)*(7^i))#
+    return(converted)#
+}#
+##
+# Part d: Generalize part a through c to any base (k, instead of just 7)#
+##
+# Part a with any base (k):#
+pk <- function(n, k) {#
+##
+# This function takes an integer (x) and a base (k) and returns x numbers in#
+#     base k starting at 0.  So, the final number is the base k equivalent of#
+#     x - 1#
+##
+# The counting is performed by calling a function (base10tok) that converts#
+#     base 10 to base k as the program loops to the desired number#
+##
+    base10tok<-function(n, k){#
+##
+##
+# This function takes an integer (n) and a base (k) converts n from base 10#
+#     to base k and returns the base k number#
+##
+# The function works by taking the input number (n), finding the modulus with#
+#     respect to k (n%%k) (basically finding the remainder when dividing by k),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by k, and the steps repeated with the new number#
+#     until the number is less than k.#
+##
+# When the number is less than than k, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base k.#
+##
+##
+        i = 0#
+        converted = 0#
+        while(n%/%k!= 0){#
+            converted <- converted +((n%%k)*(10^i))#
+            i = i + 1#
+            n <- n%/%k#
+        }#
+        converted <- converted + ((n%%k)*(10^i))#
+        return(converted)#
+    }#
+    count <- integer(n)#
+    for (i in 1:n) {#
+        count[i] <- base10tok(i-1,k)#
+    }#
+    count#
+}#
+# Part b with any base (k, instead of 7):#
+base10tok<-function(x, k){#
+##
+##
+# This function takes an integer (x) and a base (k) converts x from base 10#
+#     to base k and returns the base k number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to k (x%%k) (basically finding the remainder when dividing by k),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by k, and the steps repeated with the new number#
+#     until the number is less than k.#
+##
+# When the number is less than than k, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base k.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(x%/%k != 0){#
+        converted <- converted + ((x%%k)*(10^i))#
+        i = i + 1#
+        x <- x%/%k#
+    }#
+    converted <- converted + ((x%%k)*(10^i))#
+    return(converted)#
+}#
+# Part c: with any base (k, instead of 7):#
+basekto10<-function(y, k){#
+##
+##
+# This function takes an integer (yx) and a base (k) and converts y from base k#
+#     to base 10 and returns the base 10 number#
+##
+# The function works by taking the input number (y), finding the modulus with#
+#     respect to 10 (y%%10) (basically finding the remainder when dividing by 10),#
+#     multiplying that remainder by k raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 10, and the steps repeated with the new number#
+#     until the number is less than 10.#
+##
+# When the number is less than than 10, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 10.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(y%/%10 != 0){#
+        converted <- converted + ((y%%10)*(k^i))#
+        i = i + 1#
+        y <- y%/%10#
+    }#
+    converted <- converted + ((y%%10)*(k^i))#
+    return(converted)#
+}#
+##
+# Testing all functions
+p7(50)    # should end at 100#
+base10to7(35)     # should be 50#
+base7to10(50)     # should be 35#
+base7to10(base10to7(123456))
+p7(36,5)  # should end at 120#
+base10tok(35,5)   # should be 120#
+basekto10(400,5)  # should be 100#
+basekto10(base10tok(43210,5),5)
+pk(36,5)  # should end at 120#
+base10tok(35,5)   # should be 120#
+basekto10(400,5)  # should be 100#
+basekto10(base10tok(43210,5),5)
+##
+# Testing all functions#
+##
+#
+p7(50)                            # should end at 100#
+base10to7(35)                     # should be 50#
+base7to10(50)                     # should be 35#
+base7to10(base10to7(123456))      # should be obvious#
+#
+pk(36,5)                          # should end at 120#
+base10tok(35,5)                   # should be 120#
+basekto10(400,5)                  # should be 100#
+basekto10(base10tok(43210,5),5)   # should be obvious
+rm(list=ls())
+q()
+class <- read.csv("http://www.users.miamioh.edu/hughesmr/sta333/baseballsallaries.csv", header=TRUE)
+class <- read.csv("http://www.users.miamioh.edu/hughesmr/sta333/baseballsallaries.txt", header=TRUE)
+class <- read.file("http://www.users.miamioh.edu/hughesmr/sta333/baseballsalaries.txt", header=TRUE)
+?read
+?/read
+??read
+class <- readlines("http://www.users.miamioh.edu/hughesmr/sta333/baseballsalaries.txt", header=TRUE)
+library(repmis)
+??Git_stamp
+?loadandCite
+?LoadandCite
+LoadandCite()
+LoadandCite(pkgs=repmis)
+LoadandCite(pkgs="repmis")
+q()
+14%/%7
+14%%7
+100%7%
+100%/%7
+100%%7
+16%/%7
+17%/%7
+base10to7<-function(x){i=0sum=0while(x%/%7!=0){sum<-sum+((x%%7)*(10^i))i=i+1x<-x%/%7}sum<-sum+((x%%7)*(10^i))return(sum)}base10to7(100)
+q()
+##################################################################################
+##
+# This assignment converts numbers between bases   #
+##
+# We start with base 10 and base 7#
+# Then move to conversions between base 10 and base k#
+##
+##################################################################################
+#
+##
+# Part a: Count in base 7 starting at 0 not 1 (not the way I usually count...)#
+##
+#
+p7 <- function(n) {#
+##
+# This function takes an integer (n) in base 7 and returns n numbers in#
+#     base 7 starting at 0.  So, the final number is the base 7 equivalent of#
+#     n - 1#
+##
+# The counting is performed by calling a function (base10to7) that converts#
+#     base 10 to base 7 as the program loops to the desired number#
+##
+    base10to7<-function(n){#
+##
+##
+# This function takes an integer (n) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+# The function works by taking the input number (n), finding the modulus with#
+#     respect to 7 (n%%7) (basically finding the remainder when dividing by 7),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 7 using integer division (%/%), and the steps#
+#     repeated with the new number until the number is less than 7.#
+##
+# When the number is less than than 7, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 7.#
+##
+##
+        i = 0#
+        converted = 0#
+        while(n%/%7 != 0){#
+            converted <- converted + ((n%%7)*(10^i))#
+            i = i + 1#
+            n <- n%/%7#
+        }#
+        converted <- converted + ((n%%7)*(10^i))#
+        return(converted)#
+    }#
+#
+    count <- integer(n)#
+    for (i in 1:n) {#
+        count[i] <- base10to7(i-1)#
+#
+    }#
+#
+count#
+}#
+#
+##
+# Part b (provided): Function for converted base 10 to base 7#
+##
+#
+base10to7<-function(x){#
+##
+##
+# This function takes an integer (x) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to 7 (x%%7) (basically finding the remainder when dividing by 7),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided using integer division (%/%) by 7, and the steps#
+#     repeated with the new number until the number is less than 7.#
+##
+# When the number is less than than 7, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 7.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(x%/%7 != 0){#
+        converted <- converted + ((x%%7)*(10^i))#
+        i = i + 1#
+        x <- x%/%7#
+    }#
+    converted <- converted + ((x%%7)*(10^i))#
+    return(converted)#
+}#
+##
+# Part c: Function for converting base 7 to base 10#
+##
+#
+base7to10<-function(y){#
+##
+##
+# This function takes an integer (y) and converts it from base 7 to base 10#
+#     and returns the base 10 number#
+##
+# The function works by taking the input number (y), finding the modulus with#
+#     respect to 10 (y%%10) (basically finding the remainder when dividing by 10),#
+#     multiplying that remainder by 7 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 10 using integer division (%/%), and the steps#
+#     repeated with the new number until the number is less than 10.#
+##
+# When the number is less than than 10, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 10.#
+##
+##
+#
+    i = 0#
+    converted = 0#
+    while(y%/%10 != 0){#
+        converted <- converted + ((y%%10)*(7^i))#
+        i = i + 1#
+        y <- y%/%10#
+    }#
+    converted <- converted + ((y%%10)*(7^i))#
+    return(converted)#
+}#
+##
+# Part d: Generalize part a through c to any base (k, instead of just 7)#
+##
+# Part a with any base (k):#
+pk <- function(n, k) {#
+##
+# This function takes an integer (n) and a base (k) and returns n numbers in#
+#     base k starting at 0.  So, the final number is the base k equivalent of#
+#     n - 1#
+##
+# The counting is performed by calling a function (base10tok) that converts#
+#     base 10 to base k as the program loops to the desired number#
+##
+    base10tok<-function(n, k){#
+##
+##
+# This function takes an integer (n) and a base (k) converts n from base 10#
+#     to base k and returns the base k number#
+##
+# The function works by taking the input number (n), finding the modulus with#
+#     respect to k (n%%k) (basically finding the remainder when dividing by k),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by k using integer division (%/%), and the steps#
+#     repeated with the new number until the number is less than k.#
+##
+# When the number is less than than k, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base k.#
+##
+##
+        i = 0#
+        converted = 0#
+        while(n%/%k!= 0){#
+            converted <- converted +((n%%k)*(10^i))#
+            i = i + 1#
+            n <- n%/%k#
+        }#
+        converted <- converted + ((n%%k)*(10^i))#
+        return(converted)#
+    }#
+    count <- integer(n)#
+    for (i in 1:n) {#
+        count[i] <- base10tok(i-1,k)#
+    }#
+    count#
+}#
+# Part b with any base (k, instead of 7):#
+base10tok<-function(x, k){#
+##
+##
+# This function takes an integer (x) and a base (k) converts x from base 10#
+#     to base k and returns the base k number#
+##
+# The function works by taking the input number (x), finding the modulus with#
+#     respect to k (x%%k) (basically finding the remainder when dividing by k),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by k using integer division (%/%), and the steps#
+#     repeated with the new number until the number is less than k.#
+##
+# When the number is less than than k, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base k.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(x%/%k != 0){#
+        converted <- converted + ((x%%k)*(10^i))#
+        i = i + 1#
+        x <- x%/%k#
+    }#
+    converted <- converted + ((x%%k)*(10^i))#
+    return(converted)#
+}#
+# Part c: with any base (k, instead of 7):#
+basekto10<-function(y, k){#
+##
+##
+# This function takes an integer (y) and a base (k) and converts y from base k#
+#     to base 10 and returns the base 10 number#
+##
+# The function works by taking the input number (y), finding the modulus with#
+#     respect to 10 (y%%10) (basically finding the remainder when dividing by 10),#
+#     multiplying that remainder by k raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 10 using integer division (%/%), and the steps#
+#     repeated with the new number until the number is less than 10.#
+##
+# When the number is less than than 10, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 10.#
+##
+##
+    i = 0#
+    converted = 0#
+    while(y%/%10 != 0){#
+        converted <- converted + ((y%%10)*(k^i))#
+        i = i + 1#
+        y <- y%/%10#
+    }#
+    converted <- converted + ((y%%10)*(k^i))#
+    return(converted)#
+}#
+##
+# Testing all functions
+p7(50)                            # should end at 100#
+base10to7(35)                     # should be 50#
+base7to10(50)                     # should be 35#
+base7to10(base10to7(123456))      # should be obvious
+pk(36,5)                          # should end at 120#
+base10tok(35,5)                   # should be 120#
+basekto10(400,5)                  # should be 100#
+basekto10(base10tok(43210,5),5)   # should be obvious
+q()
+base10to7<-function(x){#
+    i = 0#
+    converted = 0#
+    message(“Original x =“, x)#
+	while(x%/%7 != 0){#
+        converted <- converted + ((x%%7)*(10^i))#
+        message(“Sum =“, converted)#
+	i = i + 1#
+        x <- x%/%7#
+	message(“x after division =“,x)#
+    }#
+    message(“sum before last addition”,converted)#
+converted <- converted + ((x%%7)*(10^i))#
+	message(“Final sum (result)”,converted)#
+    return(converted)#
+}
+base10to7<-function(x){#
+    i = 0#
+    converted = 0#
+    message("Original x =", x)#
+	while(x%/%7 != 0){#
+        converted <- converted + ((x%%7)*(10^i))#
+        message("Sum =", converted)#
+	i = i + 1#
+        x <- x%/%7#
+	message("x after division =",x)#
+    }#
+    message("sum before last addition",converted)#
+converted <- converted + ((x%%7)*(10^i))#
+	message("Final sum (result)",converted)#
+    return(converted)#
+}
+base10to7(1000)
+base10to7<-function(x){#
+    i = 0#
+    converted = 0#
+    message("Original x =", x)#
+	while(x%/%7 != 0){#
+        message (" x = ",x)#
+	message("x divided by 7 = ", x%/%7)#
+	message("remainder = ", x%%7)#
+	message("This gets added to sum = ",((x%%7)*(10^i))) #
+	converted <- converted + ((x%%7)*(10^i))#
+        message("Sum =", converted)#
+	i = i + 1#
+        x <- x%/%7#
+	message("x after division =",x)#
+    }#
+    message("sum before last addition",converted)#
+converted <- converted + ((x%%7)*(10^i))#
+	message("Final sum (result)",converted)#
+    return(converted)#
+}
+base10to7(1000)
+p7 <- function(n) {#
+##
+# This function takes an integer (n) in base 7 and returns n numbers in#
+#     base 7 starting at 0.  So, the final number is the base 7 equivalent of#
+#     n - 1#
+##
+# The counting is performed by calling a function (base10to7) that converts#
+#     base 10 to base 7 as the program loops to the desired number#
+##
+    base10to7<-function(n){#
+##
+##
+# This function takes an integer (n) and converts it from base 10 to base 7#
+#     and returns the base 7 number#
+##
+# The function works by taking the input number (n), finding the modulus with#
+#     respect to 7 (n%%7) (basically finding the remainder when dividing by 7),#
+#     multiplying that remainder by 10 raised to the loop index (i) and#
+#     accumulating that sum (converted).  Then the loop index is incremented,#
+#     the number is divided by 7 using integer division (%/%), and the steps#
+#     repeated with the new number until the number is less than 7.#
+##
+# When the number is less than than 7, the final term is added to the sum#
+#     (converted) and converted is returned by the function as the number#
+#     in base 7.#
+##
+##
+        i = 0#
+        converted = 0#
+        while(n%/%7 != 0){#
+            converted <- converted + ((n%%7)*(10^i))#
+            i = i + 1#
+            n <- n%/%7#
+        }#
+        converted <- converted + ((n%%7)*(10^i))#
+        return(converted)#
+    }#
+#
+    count <- integer(n)#
+    for (i in 1:n) {#
+        count[i] <- base10to7(i-1)#
+#
+    }#
+#
+count#
+}
+p7(14)
+p7(100)
+p7 <- function(n){#
+base10to7 <- function(x){#
+i=0#
+sum=0#
+while(x%/%7!=0){ #divides number by base 7 and returns an integer#
+sum <- sum+((x%%7)*(10^i)) #%% gets remainder #
+i=i+1#
+x < -x%/%7#
+}#
+sum <- sum+((x%%7)*(10^i))#
+return(sum)#
+}#
+count <- integer(n)#
+for (i in 1:n) {#
+count[i] <- base10to7(i-1)#
+}#
+count#
+}#
+p7(5)
+p(14)
+p7(14)
+q()
+setwd("~/Documents/SMU Classes/03_Data_Science/CaseStudy1/CaseStudyProject")#
+source("data/init.R")#
+source("data/gatherGDP.R")#
+source("data/gatherEDU.R")#
+source("data/tidyGDP.R")#
+source("data/tidyEDU.R")
+check <- character(190)#
+#
+for (i in 1:190) {#
+    if (GDP[i,1] %in% EDU[1:nrow(EDU),1] ) {#
+        check[i] = "Match"#
+    } else {#
+        check[i] = "No Match"#
+    }#
+}#
+check#
+message ("Of the 190 countries in the GDP file, ", GDP$CountryCode[131], ", or ", GDP[131,4], ", is not in the Education file.")#
+#
+########################################################################################
+#  Now let's merge GDP and EDU on the CountryCode#
+#  We'll call the merged file "merged" (pretty creative, huh?)#
+########################################################################################
+#
+merged <- merge(GDP, EDU, by="CountryCode", all=FALSE)#
+#
+########################################################################################
+#  Optionally, count the number of rows#
+#  Remove all rows with nulls as the ranking (column GDPRanking)#
+#  Optionally, count the rows that are left#
+#  One GDP country (SSD) did not have an EDU entry as shown previously#
+#  so we are down to 189 as it should be#
+########################################################################################
+#
+if (debug == 1) {#
+    nrow(merged)#
+    head(merged)#
+    tail(merged)#
+}#
+#
+bad <- is.na(merged$GDPRanking)#
+merged <- merged[!bad,]#
+#
+if (debug == 1) {#
+    nrow(merged)#
+    head(merged)#
+    tail(merged)#
+}
+names(merged)
+keep <- c(1,2,4,5,12,14)#
+#
+mergedReduced <- merged[ , keep]
+names(mergedReduced)
+names(mergedReduced)[3]  <- "CountryName"
+names(mergedReduced)
+message ("The number of rows that matched is ", nrow(mergedReduced))
+mergedReducedSorted <- arrange(mergedReduced, desc(GDPRanking) )#
+head(mergedReducedSorted)#
+tail(mergedReducedSorted)#
+#
+message ("The 13th country in the list is ", mergedReducedSorted[13,$CountryName])
+message ("The 13th country in the list is ", mergedReducedSorted[13,CountryName]
+)
+message ("The 13th country in the list is ", mergedReducedSorted[13,mergedReducedSorted$CountryName])
+message ("The 13th country in the list is ", mergedReducedSorted[13,3])
+keep <- c(1,2,4,5,12)#
+mergedReduced <- merged[ , keep]#
+names(mergedReduced)[3]  <- "CountryName"#
+#
+if (debug == 1) {#
+    names(mergedReduced)#
+}
+message ("The number of rows that matched is ", nrow(mergedReduced))
+mergedReducedSorted <- arrange(mergedReduced, desc(GDPRanking) )#
+head(mergedReducedSorted)#
+tail(mergedReducedSorted)#
+#
+message ("The 13th country in the list is ", mergedReducedSorted[13,3])
+OECDGDP <- mergedReducedSorted$GDPRanking[mergedReducedSorted$IncomeGroup] == "High income: OECD"]#
+NONOECDGDP <- mergedReducedSorted[2][mergedReducedSorted$IncomeGroup] == "High income: nonOECD"]#
+#
+message ("The mean GDP ranking of the High Income: OECD countries is     ", round(mean(OECDGDP), 3))#
+message ("The mean GDP ranking of the High Income: non OECD countries is ", round(mean(NONOECDGDP), 3))
+OECDGDP <- mergedReducedSorted$GDPRanking[mergedReducedSorted$IncomeGroup == "High income: OECD"]#
+NONOECDGDP <- mergedReducedSorted[2][mergedReducedSorted$IncomeGroup == "High income: nonOECD"]#
+#
+message ("The mean GDP ranking of the High Income: OECD countries is     ", round(mean(OECDGDP), 3))#
+message ("The mean GDP ranking of the High Income: non OECD countries is ", round(mean(NONOECDGDP), 3))
+names(mergedReducedSorted)
+OECDGDP <- mergedReducedSorted[2][mergedReducedSorted[5] == "High income: OECD"]#
+NONOECDGDP <- mergedReducedSorted[2][mergedReducedSorted[5] == "High income: nonOECD"]#
+message ("The mean GDP ranking of the High Income: OECD countries is     ", round(mean(OECDGDP), 3))#
+message ("The mean GDP ranking of the High Income: non OECD countries is ", round(mean(NONOECDGDP), 3))
+ggplot(mergedReducedSorted, aes(x=GDPRanking,y=GDPDollar))  + scale_y_continuous(trans=log10_trans(), breaks = trans_breaks("log10", function(x) 10^x),#
+labels = trans_format("log10", math_format(10^.x))) + xlim(0,200) +#
+geom_point(aes(colour=IncomeGroup),size=3) + annotation_logticks(sides="l",scaled=FALSE) +#
+theme(panel.grid.minor.y = element_blank())
+GDPGroup <- numeric(nrow(mergedReducedSorted))#
+mergedReducedSorted <- cbind(mergedReducedSorted,GDPGroup)#
+#
+if (debug == 1) {#
+    str(mergedReducedSorted)#
+}#
+for (i in 1:nrow(mergedReducedSorted)) {#
+    if (mergedReducedSorted$GDPRanking[i] <= nrow(mergedReducedSorted)/5) {#
+        mergedReducedSorted$GDPGroup[i] = 1#
+    } else if ( (mergedReducedSorted$GDPRanking[i] > nrow(mergedReducedSorted)/5)   && (mergedReducedSorted$GDPRanking[i] <= 2*nrow(mergedReducedSorted)/5) ) {#
+        mergedReducedSorted$GDPGroup[i] = 2#
+    } else if ( (mergedReducedSorted$GDPRanking[i] > 2*nrow(mergedReducedSorted)/5) && (mergedReducedSorted$GDPRanking[i] <= 3*nrow(mergedReducedSorted)/5) ) {#
+        mergedReducedSorted$GDPGroup[i] = 3#
+    } else if ( (mergedReducedSorted$GDPRanking[i] > 3*nrow(mergedReducedSorted)/5) && (mergedReducedSorted$GDPRanking[i] <= 4*nrow(mergedReducedSorted)/5) ) {#
+        mergedReducedSorted$GDPGroup[i] = 4#
+    } else if (mergedReducedSorted$GDPRanking[i] > 4*nrow(mergedReducedSorted)/5)  {#
+        mergedReducedSorted$GDPGroup[i] = 5#
+    }#
+}
+table(mergedReducedSorted$GDPGroup, mergedReducedSorted$IncomeGroup)
+TopLMI <- mergedReducedSorted[2][mergedReducedSorted[5]== "Lower middle income"]#
+message ("The number of Lower middle income countries in the top 38 GDP are ", sum(TopLMI < 39) )
